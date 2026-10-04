@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pran's Educare</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f5f7fb;color:#1f2937}
+header{background:linear-gradient(135deg,#174ea6,#4285f4);color:white;padding:28px 18px;text-align:center}
+header h1{margin:0 0 8px;font-size:32px}
+header p{margin:0;font-size:16px}
+.container{max-width:1000px;margin:auto;padding:20px}
+.search{width:100%;padding:15px;border:1px solid #d1d5db;border-radius:12px;font-size:16px;margin-bottom:22px}
+h2{margin-top:28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:white;border-radius:16px;padding:20px;box-shadow:0 3px 12px rgba(0,0,0,.08)}
+.card h3{margin-top:0;color:#174ea6}
+.chapter{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #eee;padding:12px 0;gap:10px}
+.chapter:first-of-type{border-top:0}
+.btn{display:inline-block;background:#174ea6;color:white;text-decoration:none;border-radius:8px;padding:8px 12px;font-size:14px}
+.btn.youtube{background:#d93025}
+footer{text-align:center;padding:30px;color:#6b7280}
+.hidden{display:none}
+</style>
+</head>
+<body>
+<header>
+  <h1>Pran's Educare</h1>
+  <p>Maths Notes • Study Materials • Online Classes</p>
+</header>
+
+<main class="container">
+  <input id="search" class="search" type="search"
+         placeholder="🔍 Search notes, chapter or class...">
+
+  <h2>📚 Study Materials</h2>
+  <div class="grid">
+
+    <section class="card searchable">
+      <h3>Class 10 Mathematics</h3>
+      <div class="chapter searchable">
+        <span>Real Numbers</span>
+        <a class="btn" href="notes/class10-real-numbers.pdf">PDF</a>
+      </div>
+      <div class="chapter searchable">
+        <span>Polynomials</span>
+        <a class="btn" href="notes/class10-polynomials.pdf">PDF</a>
+      </div>
+      <div class="chapter searchable">
+        <span>Pair of Linear Equations</span>
+        <a class="btn" href="notes/class10-linear-equations.pdf">PDF</a>
+      </div>
+      <div class="chapter searchable">
+        <span>Quadratic Equations</span>
+        <a class="btn" href="notes/class10-quadratic-equations.pdf">PDF</a>
+      </div>
+      <div class="chapter searchable">
+        <span>Trigonometry</span>
+        <a class="btn" href="notes/class10-trigonometry.pdf">PDF</a>
+      </div>
+    </section>
+
+    <section class="card searchable">
+      <h3>Class 8 Mathematics</h3>
+      <div class="chapter searchable">
+        <span>Rational Numbers</span>
+        <a class="btn" href="notes/class8-rational-numbers.pdf">PDF</a>
+      </div>
+      <div class="chapter searchable">
+        <span>Linear Equations</span>
+        <a class="btn" href="notes/class8-linear-equations.pdf">PDF</a>
+      </div>
+      <div class="chapter searchable">
+        <span>Understanding Quadrilaterals</span>
+        <a class="btn" href="notes/class8-quadrilaterals.pdf">PDF</a>
+      </div>
+      <div class="chapter searchable">
+        <span>Mensuration</span>
+        <a class="btn" href="notes/class8-mensuration.pdf">PDF</a>
+      </div>
+      <div class="chapter searchable">
+        <span>Data Handling</span>
+        <a class="btn" href="notes/class8-data-handling.pdf">PDF</a>
+      </div>
+    </section>
+
+    <section class="card searchable">
+      <h3>Class 9 Mathematics</h3>
+      <div class="chapter searchable">
+        <span>Number Systems</span>
+        <a class="btn" href="notes/class9-number-systems.pdf">PDF</a>
+      </div>
+      <div class="chapter searchable">
+        <span>Polynomials</span>
+        <a class="btn" href="notes/class9-polynomials.pdf">PDF</a>
+      </div>
+      <div class="chapter searchable">
+        <span>Coordinate Geometry</span>
+        <a class="btn" href="notes/class9-coordinate-geometry.pdf">PDF</a>
+      </div>
+      <div class="chapter searchable">
+        <span>Triangles</span>
+        <a class="btn" href="notes/class9-triangles.pdf">PDF</a>
+      </div>
+    </section>
+
+    <section class="card searchable">
+      <h3>TET / CTET</h3>
+      <div class="chapter searchable">
+        <span>Mathematics Notes</span>
+        <a class="btn" href="notes/tet-maths.pdf">PDF</a>
+      </div>
+      <div class="chapter searchable">
+        <span>Previous Year Questions</span>
+        <a class="btn" href="notes/tet-previous-papers.pdf">PDF</a>
+      </div>
+    </section>
+
+    <section class="card searchable">
+      <h3>M.Sc. Mathematics</h3>
+      <div class="chapter searchable">
+        <span>Abstract Algebra</span>
+        <a class="btn" href="notes/abstract-algebra.pdf">PDF</a>
+      </div>
+      <div class="chapter searchable">
+        <span>Real Analysis</span>
+        <a class="btn" href="notes/real-analysis.pdf">PDF</a>
+      </div>
+      <div class="chapter searchable">
+        <span>Differential Equations</span>
+        <a class="btn" href="notes/differential-equations.pdf">PDF</a>
+      </div>
+    </section>
+  </div>
+
+  <h2>🎥 Online Classes</h2>
+  <div class="card">
+    <p>Watch complete Maths lessons on my YouTube channel.</p>
+    <a class="btn youtube" href="#" target="_blank">Visit YouTube Channel</a>
+  </div>
+
+  <h2>📝 Question Papers & Worksheets</h2>
+  <div class="grid">
+    <div class="card searchable">
+      <h3>Class 10 Question Papers</h3>
+      <a class="btn" href="notes/class10-question-papers.pdf">Open PDF</a>
+    </div>
+    <div class="card searchable">
+      <h3>Practice Worksheets</h3>
+      <a class="btn" href="notes/maths-worksheets.pdf">Open PDF</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  © 2026 Pran's Educare • Learn Maths with clarity
+</footer>
+
+<script>
+const search = document.getElementById('search');
+const items = document.querySelectorAll('.searchable');
+
+search.addEventListener('input', () => {
+  const q = search.value.toLowerCase().trim();
+  items.forEach(item => {
+    item.classList.toggle('hidden', q && !item.innerText.toLowerCase().includes(q));
+  });
+});
+</script>
+</body>
+</html>
